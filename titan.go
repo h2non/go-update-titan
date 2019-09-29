@@ -30,7 +30,7 @@ type Release struct {
 	Artifacts []*Artifact `json:"artifacts"`
 }
 
-// File model.
+// Artifact model.
 type Artifact struct {
 	Name string  `json:"name"`
 	URL  string  `json:"url"`
