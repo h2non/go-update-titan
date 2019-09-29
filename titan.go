@@ -112,7 +112,7 @@ func toRelease(r *Release) *update.Release {
 		PublishedAt: r.CreatedAt,
 	}
 
-	for _, f := range r.Files {
+	for _, f := range r.Artifacts {
 		out.Assets = append(out.Assets, &update.Asset{
 			Name: f.Name,
 			Size: f.Size,
