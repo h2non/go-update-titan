@@ -115,7 +115,7 @@ func toRelease(r *Release) *update.Release {
 	for _, f := range r.Artifacts {
 		out.Assets = append(out.Assets, &update.Asset{
 			Name: f.Name,
-			Size: f.Size,
+			Size: int(f.Size),
 			URL:  f.URL,
 		})
 	}
