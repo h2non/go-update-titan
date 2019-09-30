@@ -26,7 +26,6 @@ type Release struct {
 	Notes     string      `json:"notes"`
 	NotesHTML string      `json:"notes_html"`
 	CreatedAt time.Time   `json:"date"`
-	Timestamp time.Time   `json:"timestamp"`
 	Artifacts []*Artifact `json:"artifacts"`
 }
 
